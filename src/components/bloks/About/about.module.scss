@@ -1,0 +1,51 @@
+@import '../../../styles/colors.scss';
+
+.wrapper {
+    max-width: 65vw;
+    width: 65vw;
+}
+
+.parallax {
+    width: 100%;
+    max-width: 100%;
+    perspective: 1px;
+    height: 65vh;
+    overflow-y: auto;
+}
+
+.parallax_layer {
+  position: absolute;
+  inset: 0;   
+  height: 100%;
+}
+
+.parallax_image {
+    // transform: translateZ(0);
+     transform: translateZ(0);
+   object-fit: cover;
+  
+  img {
+    @media(max-width: 768px) {
+        height: calc(100% + 300px);
+        object-fit: cover;
+    }
+  }
+}
+
+.parallax_text {
+    // width: 200%;
+    // min-width: 200%;
+    transform: translateZ(-2px);
+    color: $white;
+    font-family: $font-roboto-slab;
+    font-size: 140px;
+    font-size: 72px;
+    transform: translateZ(-2px) translateX(100px) translateY(97%) scale(3);
+    line-height: 100%;
+    
+    @media (max-width: 768px) {
+        font-size: 62px;
+        transform: translateZ(-2px) translateX(20px) translateY(97%) scale(3);
+    }
+}
+

@@ -8,14 +8,17 @@ import {
   } 
 from 'react-router-dom';
 import Header from './components/layout/Header/Header';
+import MainPage from './components/pages/MainPage/MainPage';
+import Navigation from './components/layout/Navigation/Navigation';
 
 function App() {
-  // const [count, setCount] = useState(0)
 
   return (
   <>
       <Header />
+      <Navigation />
       <Routes>
+        <Route index path='/' element={<MainPage />} />
         {/*
         <Route path='/materials' element={<MaterialsPage />} />
         <Route path='/blog' element={<BlogPage />}></Route>

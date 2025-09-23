@@ -1,7 +1,5 @@
 
 
-@import '../../heart/src/styles/variables.scss';
-
 :root {
   font-family: "Roboto", "Roboto Slab", "Times New Roman", sans-serif;
   line-height: 1.5;
@@ -23,6 +21,7 @@ body {
   margin: 0;
   display: flex;
   place-items: center;
+  flex-direction: column;
   min-width: 320px;
   min-height: 100vh;
   background-color: #fff;

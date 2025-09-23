@@ -7,13 +7,14 @@ import {
   Routes
   } 
 from 'react-router-dom';
+import Header from './components/layout/Header/Header';
 
 function App() {
   // const [count, setCount] = useState(0)
 
   return (
   <>
-      {/* <Header /> */}
+      <Header />
       <Routes>
         {/*
         <Route path='/materials' element={<MaterialsPage />} />

@@ -3,6 +3,7 @@
 .wrapper {
     max-width: 65vw;
     width: 65vw;
+    overflow: hidden;
 }
 
 .parallax {
@@ -20,9 +21,8 @@
 }
 
 .parallax_image {
-    // transform: translateZ(0);
-     transform: translateZ(0);
-   object-fit: cover;
+  transform: translateZ(0);
+  object-fit: cover;
   
   img {
     @media(max-width: 768px) {
@@ -33,8 +33,6 @@
 }
 
 .parallax_text {
-    // width: 200%;
-    // min-width: 200%;
     transform: translateZ(-2px);
     color: $white;
     font-family: $font-roboto-slab;
@@ -44,8 +42,8 @@
     line-height: 100%;
     
     @media (max-width: 768px) {
-        font-size: 62px;
-        transform: translateZ(-2px) translateX(20px) translateY(97%) scale(3);
+      font-size: 62px;
+      transform: translateZ(-2px) translateX(20px) translateY(97%) scale(3);
     }
 }
 

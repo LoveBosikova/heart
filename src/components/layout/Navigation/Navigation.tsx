@@ -15,7 +15,7 @@ function Navigation () {
                 <NavLink to={'/partners'} end>
                     <li className={style.linkWrap}><p className={style.link}>Партнёры</p></li>
                 </NavLink>
-                <NavLink to={'/results'} end>
+                <NavLink to={'/public'} end>
                     <li className={style.linkWrap}><p className={style.link}>Отчёты</p></li>
                 </NavLink>
                 <NavLink to={'/top'} end>

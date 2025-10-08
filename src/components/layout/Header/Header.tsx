@@ -1,3 +1,4 @@
+import { NavLink } from 'react-router';
 import Logo from '../../ui/Logo/Logo';
 import style from './header.module.scss';
 
@@ -5,7 +6,9 @@ function Header () {
     return (
         <header className={style.header}>
             <div className={style.logo}>
-                <Logo />
+                <NavLink to={'/'} end>
+                    <Logo />
+                </NavLink>
             </div>
             <hgroup className={style.headers}>
                 <h1 className={style.h1}>Союз пенсионеров России</h1>

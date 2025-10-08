@@ -157,7 +157,6 @@ import public4 from '../../../assets/public2024.pdf'
 
 // Импортируем SVG как строки
 import DownloadIconUrl from "../../../assets/download_icon.svg";
-import FileIconUrl from "../../../assets/file.svg"
 
 export type TFileToDownload = {
     name: string;
@@ -168,14 +167,8 @@ function PublicBlock () {
     
     const DownloadItem = (props: TFileToDownload) => {
         const {name, link} = props
-        
         return (
             <li className={style.instruction} key={name}>
-                {/* <div className={style.file}>
-                    <div className={style.file__wrap}>
-                        <img src={FileIconUrl} alt="File icon" />
-                    </div>
-                </div> */}
                 <div className={style.textWrap}>
                     <h3 className={style.name}>{name}</h3>
                 </div>

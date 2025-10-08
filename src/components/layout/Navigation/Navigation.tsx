@@ -18,7 +18,7 @@ function Navigation () {
                 <NavLink to={'/public'} end>
                     <li className={style.linkWrap}><p className={style.link}>Отчёты</p></li>
                 </NavLink>
-                <NavLink to={'/top'} end>
+                <NavLink to={'/sertificates'} end>
                     <li className={style.linkWrap}><p className={style.link}>Награды</p></li>
                 </NavLink>
                 <NavLink to={'/contacts'} end>

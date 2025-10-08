@@ -4,46 +4,39 @@
 @import 'swiper/css/autoplay';
 @import '../../../styles/colors.scss';
 
-.projectsPage {
+.sertificates {
     width: 80%;
     max-width: 80%;
     margin-left: auto;
     margin-right: auto;
     font-family: $font-roboto;
     color: $blue-dark;
+    padding: 5vw 10%;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
 }
 
-.title {
-    padding: 32px 0;
-    font-family: $font-roboto-slab;
-}
-
-.project {
-    padding-bottom: 5vw;
-
-    &__title {
-        font-family: $font-roboto-slab;
-    }
-
-    &__text {
-        padding: 12px 0;
-    }
+.article {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
 }
 
 .sliderContainer {
-    // width: 80%;
-    max-width: 1200px;
+    width: 100%;
+    max-width: 100%;
     margin: 0 auto;
-    padding: 20px 0px;
+    padding: 20px;
     margin-left: auto;
     margin-right: auto;
 }
 
 .mySwiper {
-    width: 80vw;
-    // max-width: 80%;
+    width: 70vw;
     height: 500px;
     border-radius: 12px;
+    margin-top: 6vw;
     overflow: hidden;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
